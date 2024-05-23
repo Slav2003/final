@@ -1,0 +1,283 @@
+<!--FINAL WEB DESIGN by Anthony Karpovs-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Anthony Constructions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    body{
+     padding-left: 100px;
+     padding-right: 100px;
+    }
+    .construction-bg {
+            background-image: url('construction_img3.jpg');
+            background-repeat: no-repeat;/* ensures the image doesn't keep repeating */
+            background-size: cover;
+            background-position: center top; 
+            filter: brightness(0.7);
+            margin-top: 100px;
+            padding-bottom: 100px; /* adding padding to move image down outside jumbotron */
+
+        }
+        .jumbotron {
+            background-color: rgba(255, 255, 255, 0.5); /* semi transparent bg colour*/
+          }
+        #project-progression [class*="card"] {
+          float: left;
+          padding: 15px;
+          border: 2px solid #EA8C55;
+          border-radius: 10px;
+          height: 150px;
+          box-shadow: 0 5px 10px;
+}
+    </style>
+
+</head>
+
+<body>
+
+  <div class="construction-bg">
+     <div class="jumbotron text-center">
+  <h1>Anthony Constructions</h1>
+  <p>Build | Inspire | Connect</p>
+   </div>
+</div>
+
+<!-- nav bar --> 
+<div class="btn-group" style="padding-top: 10px;">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Navigation Bar
+  </button>
+  <div class="dropdown-menu" style="width: 180px">
+    <ul>
+      <li><a href="#hero-section">Home</a></li>
+      <li><a href="#myidname">Safety Alerts</a></li>
+      <li><a href="#project-progression">Project Progression</a></li>
+      <li><a href="#team-presentation">Team Presentation</a></li>
+      <li><a href="next-page.html">Portfolio</a></li>
+    </ul>
+  </div>
+</div>
+
+     <section id="hero-section" >
+      <h1 class="text-center">Construction Site Monitoring</h1>
+        <div class="text-center"> 
+        <p>The purpose of the project is to track the safety of workers, the progress of construction, report safety alerts and more.</p>
+      </div>
+        <div class="help" data-toggle="collapse" data-target="#dropdownInfo" aria-expanded="false" aria-controls="dropdownInfo" role="complementary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="background-color: #F57F4B;"> <!-- question mark svg -->
+            <path fill="currentColor" d="m12 22l-.25-3h-.25q-3.55 0-6.025-2.475T3 10.5q0-3.55 2.475-6.025T11.5 2q1.775 0 3.313.662t2.7 1.825q1.162 1.163 1.824 2.7T20 10.5q0 1.875-.612 3.6t-1.676 3.2q-1.062 1.475-2.525 2.675T12 22m2-3.65q1.775-1.5 2.888-3.512T18 10.5q0-2.725-1.888-4.612T11.5 4Q8.775 4 6.888 5.888T5 10.5q0 2.725 1.888 4.613T11.5 17H14zm-2.525-2.375q.425 0 .725-.3t.3-.725q0-.425-.3-.725t-.725-.3q-.425 0-.725.3t-.3.725q0 .425.3.725t.725.3M10.75 12.8h1.5q0-.75.15-1.05t.95-1.1q.45-.45.75-.975t.3-1.125q0-1.275-.862-1.912T11.5 6q-1.1 0-1.85.613T8.6 8.1l1.4.55q.125-.425.475-.837T11.5 7.4q.675 0 1.013.375t.337.825q0 .425-.25.763t-.6.687q-.875.75-1.062 1.188T10.75 12.8m.75-1.625"/>
+          </svg>
+        </div>
+        <div class="collapse" id="dropdownInfo"> <!-- used to hide content -->
+          <span>
+            To find answers to queries relating to Safety Alerts, Project Progression, Team Presentation and Portfolio, please navigate to top of page. Any other queries can be forwarded by email to <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=lqrsmJWZwCFPpzFtRMxHpMJSqQTZDCNHkBcBqMVhsFDrGvWLNcWRprtWNCXzFCnGblgsPhFkdxGZkLVMT">info@AKConstructions.com</a>
+          </span>
+        </div>
+    </section>
+    
+    
+    
+    <section id="myidname" class="container">
+      <h1 class="text-center">Safety Alerts</h1>
+      
+      <div class="row">
+        <div class="col-md-4">       <!-- first alert in the row, column width 4 -->
+          <div class="alert alert-info" role="alert"> <!-- adding role for accessibility purposes -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-2 -3 24 24"><path fill="currentColor" d="m12.8 1.613l6.701 11.161c.963 1.603.49 3.712-1.057 4.71a3.213 3.213 0 0 1-1.743.516H3.298C1.477 18 0 16.47 0 14.581c0-.639.173-1.264.498-1.807L7.2 1.613C8.162.01 10.196-.481 11.743.517c.428.276.79.651 1.057 1.096M10 14a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0-9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V6a1 1 0 0 0-1-1"/></svg> 
+         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M10.293 4.793c.78-1.277 2.634-1.277 3.414 0l7.433 12.164C21.955 18.29 20.996 20 19.434 20H4.566c-1.562 0-2.52-1.71-1.706-3.043z"/></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M10.293 4.793c.78-1.277 2.634-1.277 3.414 0l7.433 12.164C21.955 18.29 20.996 20 19.434 20H4.566c-1.562 0-2.52-1.71-1.706-3.043z"/></svg>     
+            <h2>Fire Alarm</h2>
+            <span>12-05-23</span><br><br>
+            <span>This was a false alarm</span>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="alert alert-warning" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-2 -3 24 24"><path fill="currentColor" d="m12.8 1.613l6.701 11.161c.963 1.603.49 3.712-1.057 4.71a3.213 3.213 0 0 1-1.743.516H3.298C1.477 18 0 16.47 0 14.581c0-.639.173-1.264.498-1.807L7.2 1.613C8.162.01 10.196-.481 11.743.517c.428.276.79.651 1.057 1.096M10 14a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0-9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V6a1 1 0 0 0-1-1"/></svg> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-2 -3 24 24"><path fill="currentColor" d="m12.8 1.613l6.701 11.161c.963 1.603.49 3.712-1.057 4.71a3.213 3.213 0 0 1-1.743.516H3.298C1.477 18 0 16.47 0 14.581c0-.639.173-1.264.498-1.807L7.2 1.613C8.162.01 10.196-.481 11.743.517c.428.276.79.651 1.057 1.096M10 14a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0-9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V6a1 1 0 0 0-1-1"/></svg>  
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M10.293 4.793c.78-1.277 2.634-1.277 3.414 0l7.433 12.164C21.955 18.29 20.996 20 19.434 20H4.566c-1.562 0-2.52-1.71-1.706-3.043z"/></svg>    
+            <h2>Weather Warning</h2>
+            <span>12-05-23</span><br><br>
+            <span>Extreme winds</span>
+          </div>
+        </div>
+      
+        <div class="col-md-4">
+          <div class="alert alert-danger" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-2 -3 24 24"><path fill="currentColor" d="m12.8 1.613l6.701 11.161c.963 1.603.49 3.712-1.057 4.71a3.213 3.213 0 0 1-1.743.516H3.298C1.477 18 0 16.47 0 14.581c0-.639.173-1.264.498-1.807L7.2 1.613C8.162.01 10.196-.481 11.743.517c.428.276.79.651 1.057 1.096M10 14a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0-9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V6a1 1 0 0 0-1-1"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-2 -3 24 24"><path fill="currentColor" d="m12.8 1.613l6.701 11.161c.963 1.603.49 3.712-1.057 4.71a3.213 3.213 0 0 1-1.743.516H3.298C1.477 18 0 16.47 0 14.581c0-.639.173-1.264.498-1.807L7.2 1.613C8.162.01 10.196-.481 11.743.517c.428.276.79.651 1.057 1.096M10 14a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0-9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V6a1 1 0 0 0-1-1"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-2 -3 24 24"><path fill="currentColor" d="m12.8 1.613l6.701 11.161c.963 1.603.49 3.712-1.057 4.71a3.213 3.213 0 0 1-1.743.516H3.298C1.477 18 0 16.47 0 14.581c0-.639.173-1.264.498-1.807L7.2 1.613C8.162.01 10.196-.481 11.743.517c.428.276.79.651 1.057 1.096M10 14a1 1 0 1 0 0-2a1 1 0 0 0 0 2m0-9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V6a1 1 0 0 0-1-1"/></svg>
+            <h2>Emergency Siren</h2>
+            <span>23.07.2023</span><br><br>
+            <span>Intruders</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="project-progression" class="row">
+      <div class="col-12">
+        <div class="container">
+          <h1>Project Progression</h1>
+          <p>The construction project is approaching its final stage. The main frameworks for the buildings were completed last week. The windows, doors and other openings are currently being fitted. The schedule is due to be comfortably met thanks to the great, diligent work of our team.</p>
+          <h3>Timeline of key milestones:</h3>
+          <div class="row">
+            <div class="col-2" style="margin-left: 10%;">
+              <div class="card shadow">
+                <b>Survey</b> 
+                Surveying team completed control <br>
+                <b>Completion date:</b> <i>03.03.23</i>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card shadow">
+                <b>Planning</b> 
+                Team of engineers produced construction plan <br>
+                <b>Completion date:</b> <i>06.04.23</i>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card shadow">
+                <b>Foundation</b> 
+                Foundation set for buildings <br>
+                <b>Completion date:</b> <i>01.05.23</i>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card shadow">
+                <b>First story:</b> First story of building completed <br>
+                <b>Completion date:</b> <i>29.06.23</i> <br><br>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card shadow">
+                <b>Framework:</b> Main framework complete <br>
+                <b>Completion date:</b> <i>27.07.23</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     
+     <section id="team-presentation" class="row" >
+      <h1>Team Presentation</h1>
+      <p>We have different divisions in our construction team. We have our surveying team which includes Peter Smith and Jack Wollis, the engineering team which includes Mark Johnson and Patrick Duffy, the safety is taken care of by Mary Cooper and finally the builders include Matthew Burnes, James Connolly, Bob Hughes, and Eric O'Hara to name a few.
+      </p>
+      <h3>Some of our team:</h3> 
+      
+     <div class="container"  style="margin: 2%; padding-left: 20%;">
+      <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="peter_smith.jpeg" class="rounded-circle card-img-top mt-3 mx-auto img-thumbnail" alt="Picture of surveyor" style="height: 280px; width: 300px;">
+          <div class="card-body">
+            <h5 class="card-title">Employee 1</h5>
+            <p class="card-text"><b>Name: </b>Peter Smith </p>
+            <p class="card-text"><b>Role: </b>Land Surveyor </p>
+          </div>
+        </div>
+        </div>
+        
+        <div class="col-md-3">
+       
+        <div class="card" style="width: 18rem;">
+          <img src="mark.jpeg" class="rounded-circle card-img-top mt-3 mx-auto img-thumbnail" alt="Picture of civil engineer" style="height: 280px; width: 300px;">
+          <div class="card-body">
+            <h5 class="card-title">Employee 2</h5>
+            <p class="card-text"><b>Name: </b>Mark Johnson </p>
+            <p class="card-text"><b>Role: </b>Civil Engineer </p>
+          </div>
+        </div>
+        </div>
+        
+        <div class="col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="mary_cooper.jpg" class="rounded-circle card-img-top mt-3 mx-auto img-thumbnail" alt="Picture of safety keeper" style="height: 280px; width: 300px;">
+          <div class="card-body">
+            <h5 class="card-title">Employee 3</h5>
+            <p class="card-text"><b>Name: </b>Mary Cooper </p>
+            <p class="card-text"><b>Role: </b>Safety Keeper </p>
+          </div>
+        </div>
+        </div>
+      </div>
+      </section> 
+
+      <br> <br> <br> 
+  
+      <div class="container">
+        <div class="row">
+         <div class="col-2">
+          <section id="weather" class="p-4 rounded" style="background-color: #FFD580;"> <!-- HTML sec. display for api -->
+            <h5><b>Current Weather</b></h5>
+            <h6 id="temperature"></h6>
+            <h6 id="date"></h6>
+            <h6 id="time"></h6>
+            <h6 id="windspeed"></h6>
+              </section>
+               </div>
+                </div>
+                 </div>
+      
+      <script>
+        async function fetchWeather() { //async function, allows us to use await 
+          const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=53.33&longitude=-6.25&current_weather=true'); //request from api
+          const data = await response.json(); // conv. res to json
+      
+          const temperature = data.current_weather.temperature; //extracting data
+          const time = data.current_weather.time;
+          const windspeed = data.current_weather.windspeed;
+      
+          const [datePart, timePart] = time.split('T'); //spliting time @ 'T' part -> date on the left of T & time on the roght of T
+      
+         document.getElementById('temperature').innerText = `Temperature: ${temperature}°C`; //updating html text
+        document.getElementById('date').innerText = `Date: ${datePart}`;
+        document.getElementById('time').innerText = `Time: ${timePart}`;
+        document.getElementById('windspeed').innerText = `Windspeed: ${windspeed} km/h`;
+       }
+      fetchWeather(); //calling func.
+        </script>
+
+  <br>  <br>
+  <a href="next-page.html" class="btn btn-primary" style="float: right;">Next Page</a>
+  <br>  <br>  <br>  <br>
+   </body>
+  </html>
+  
+
+  <!--
+  Sources:
+  https://www.w3schools.com/cssref/css3_pr_background-size.php
+  https://www.w3schools.com/css/css_text.asp
+  https://www.w3schools.com/cssref/css3_pr_text-shadow.php
+  https://www.w3schools.com/html/html_tables.asp
+  https://www.w3schools.com/html/html_tables.asp
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery
+  https://www.w3schools.com/css/tryit.asp?filename=trycss_font-family
+  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color
+  ------------
+  https://www.w3schools.com/cssref/sel_nth-child.php
+  https://www.youtube.com/watch?v=kGA9RIFiyIE
+  https://www.w3schools.com/cssref/css3_pr_box-shadow.php
+  -->
+
+    <!--
+  Sources:
+  https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_default&stacked=h // start of page
+  https://getbootstrap.com/docs/4.0/components/dropdowns/ // dropdowns
+  https://getbootstrap.com/docs/4.0/components/alerts/ // alert colourssa
+  https://getbootstrap.com/docs/4.0/components/card/ // cards
+https://getbootstrap.com/docs/5.1/components/placeholders/ // placeholders
+https://stackoverflow.com/questions/70662496/how-will-i-make-perfect-circle-image-using-card-in-bootstrap-5 // more cards
+https://www.youtube.com/watch?v=zUcc4vW-jsI //api
+https://www.w3schools.com/jsref/jsref_split.asp //split
+    -->
